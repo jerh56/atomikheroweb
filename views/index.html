@@ -1,128 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing:border-box;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-	
-body {
+    body {
+      /* Ubicación de la imagen */
+      background-image: url(https://static.wixstatic.com/media/a75ce7_21d97704233b4608a1f6819a6834ca10~mv2_d_2265_6352_s_2.jpg/v1/fill/w_640,h_2466,al_t,q_85,usm_0.66_1.00_0.01/a75ce7_21d97704233b4608a1f6819a6834ca10~mv2_d_2265_6352_s_2.webp);
+      /* Para dejar la imagen de fondo centrada, vertical y
+        horizontalmente */
+      background-position: top left;
+      /* Para que la imagen de fondo no se repita */
+      background-repeat: no-repeat;
+      /* La imagen se fija en la ventana de visualización para que la altura de
+      la imagen no supere a la del contenido */
+      background-attachment: fixed;
+      /* La imagen de fondo se reescala automáticamente con el cambio del ancho
+        de ventana del navegador */
+      background-size: cover;
+      /* Se muestra un color de fondo mientras se está cargando la imagen
+      de fondo o si hay problemas para cargarla */
+      background-color: #66999;
+    }
 
-  /* Ubicación de la imagen */                        
+    .left {
+      padding: 20px;
+      float: left;
+      width: 25%;
+      /* The width is 20%, by default */
+    }
 
-  background-image: url(https://static.wixstatic.com/media/a75ce7_21d97704233b4608a1f6819a6834ca10~mv2_d_2265_6352_s_2.jpg/v1/fill/w_640,h_2466,al_t,q_85,usm_0.66_1.00_0.01/a75ce7_21d97704233b4608a1f6819a6834ca10~mv2_d_2265_6352_s_2.webp);
+    .main {
+      background-color: #f1f1f1;
+      padding: 20px;
+      float: left;
+      width: 60%;
+      /* The width is 60%, by default */
+    }
 
- 
+    .right {
+      background-color: #4CAF50;
+      padding: 20px;
+      float: left;
+      width: 20%;
+      /* The width is 20%, by default */
+    }
 
-  /* Para dejar la imagen de fondo centrada, vertical y
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width:800px) {
 
-      horizontalmente */
-
-  background-position: top left;
-
- 
-
-  /* Para que la imagen de fondo no se repita */
-
-  background-repeat: no-repeat;
-
- 
-
-  /* La imagen se fija en la ventana de visualización para que la altura de
-
-     la imagen no supere a la del contenido */
-
-  background-attachment: fixed;
-
- 
-
-  /* La imagen de fondo se reescala automáticamente con el cambio del ancho
-
-      de ventana del navegador */
-
-  background-size: cover;
-
- 
-
-  /* Se muestra un color de fondo mientras se está cargando la imagen
-
-     de fondo o si hay problemas para cargarla */
-
-  background-color: #66999;
-
-}
-
-.left {
-  padding:20px;
-  float:left;
-  width:25%; /* The width is 20%, by default */
-}
-
-.main {
-  background-color:#f1f1f1;
-  padding:20px;
-  float:left;
-  width:60%; /* The width is 60%, by default */
-}
-
-.right {
-  background-color:#4CAF50;
-  padding:20px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
-  .left, .main, .right {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-</style>
+      .left,
+      .main,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<center>
-<img id="comp-jmcozktpimgimage" alt="logo_atomik.png" data-type="image" src="https://static.wixstatic.com/media/a75ce7_35379898c7834e408c3370dd13604f16~mv2.png/v1/fill/w_560,h_322,al_c,q_80,usm_0.66_1.00_0.01/logo_atomik.webp" style="max-width:70%">
-<center>
-
-<div class="left">
-  
-	
-	<img src="https://static.wixstatic.com/media/a75ce7_5cf330026dd4412baf5d85f5b7991707~mv2.png/v1/fill/w_140,h_184,al_c,q_80,usm_0.66_1.00_0.01/juegos.webp" style="max-width:80%;height:auto;">
-	
-	
-</div>
-	
-<div class="left">
-  
-	
-	<img src="https://static.wixstatic.com/media/a75ce7_a1ffd12187744ed393ac528e6ae29178~mv2.png/v1/fill/w_160,h_184,al_c,q_80,usm_0.66_1.00_0.01/historias.webp" style="max-width:80%;height:auto;">
-	
-	
-</div>
-	
-<div class="left">
-  
-	
-	<img src="https://static.wixstatic.com/media/a75ce7_ccc7a251fb444967becbb78649e05e14~mv2.png/v1/fill/w_160,h_182,al_c,q_80,usm_0.66_1.00_0.01/recursos.webp" style="max-width:80%;height:auto;">
-	
-	
-</div>
-
-<div class="left">
-  
-	
-	<img src="https://static.wixstatic.com/media/a75ce7_be7f86da376546c497cc51edaf74f70d~mv2.png/v1/fill/w_160,h_182,al_c,q_80,usm_0.66_1.00_0.01/tienda.webp" style="max-width:80%;height:auto;">
-	
-	
-</div>
-
-
-	
-	
-	
+  <center>
+    <img id="comp-jmcozktpimgimage" alt="logo_atomik.png" data-type="image" src="https://static.wixstatic.com/media/a75ce7_35379898c7834e408c3370dd13604f16~mv2.png/v1/fill/w_560,h_322,al_c,q_80,usm_0.66_1.00_0.01/logo_atomik.webp"
+      style="max-width:70%">
+    <center>
+      <div class="left">
+        <img src="https://static.wixstatic.com/media/a75ce7_5cf330026dd4412baf5d85f5b7991707~mv2.png/v1/fill/w_140,h_184,al_c,q_80,usm_0.66_1.00_0.01/juegos.webp"
+          style="max-width:80%;height:auto;">
+      </div>
+      <div class="left">
+        <img src="https://static.wixstatic.com/media/a75ce7_a1ffd12187744ed393ac528e6ae29178~mv2.png/v1/fill/w_160,h_184,al_c,q_80,usm_0.66_1.00_0.01/historias.webp"
+          style="max-width:80%;height:auto;">
+      </div>
+      <div class="left">
+        <img src="https://static.wixstatic.com/media/a75ce7_ccc7a251fb444967becbb78649e05e14~mv2.png/v1/fill/w_160,h_182,al_c,q_80,usm_0.66_1.00_0.01/recursos.webp"
+          style="max-width:80%;height:auto;">
+      </div>
+      <div class="left">
+        <img src="https://static.wixstatic.com/media/a75ce7_be7f86da376546c497cc51edaf74f70d~mv2.png/v1/fill/w_160,h_182,al_c,q_80,usm_0.66_1.00_0.01/tienda.webp"
+          style="max-width:80%;height:auto;">
+      </div>
+      <iframe width="100%" height="100%" scrolling="auto" src="https://gogrannygo.herokuapp.com"></iframe>
 </body>
 </html>
